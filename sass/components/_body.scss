@@ -1,4 +1,10 @@
-@import "../utils/vars.scss";
+@import "../utils/vars";
+@media screen and (min-width: 1200px) {
+  .page-section .what-we-do {
+    display: none;
+  }
+}
+
 .grid {
   list-style-type: none;
   display: flex;
