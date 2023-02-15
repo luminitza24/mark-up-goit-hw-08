@@ -88,7 +88,9 @@
   line-height: 1.17;
   text-decoration: none;
 }
-.nav-link:hover, .nav-link:active, .nav-link:focus {
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
   color: rgb(33, 150, 243);
 }
 
@@ -108,11 +110,13 @@
   line-height: 1.14;
   font-style: normal;
 }
-.link:hover, .link:focus, .link:active {
+.link:hover,
+.link:focus,
+.link:active {
   color: rgb(33, 150, 243);
   cursor: pointer;
   -webkit-text-decoration: underline 2px rgb(33, 150, 243);
-          text-decoration: underline 2px rgb(33, 150, 243);
+  text-decoration: underline 2px rgb(33, 150, 243);
   transition-property: cursor, -webkit-text-decoration;
   transition-property: cursor, text-decoration;
   transition-property: cursor, text-decoration, -webkit-text-decoration;
@@ -182,7 +186,8 @@
   outline: none;
   background-color: #ffffff;
   border: 1px solid rgb(33, 150, 243);
-  box-shadow: 0 2 1 0 rgba(0, 0, 0, 0.2), 0 1 1 0 rgba(0, 0, 0, 0.14), 0 1 3 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2 1 0 rgba(0, 0, 0, 0.2), 0 1 1 0 rgba(0, 0, 0, 0.14),
+    0 1 3 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 
@@ -199,7 +204,8 @@
   outline: none;
   background-color: #ffffff;
   border: 1px solid rgb(33, 150, 243);
-  box-shadow: 0 2 1 0 rgba(0, 0, 0, 0.2), 0 1 1 0 rgba(0, 0, 0, 0.14), 0 1 3 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2 1 0 rgba(0, 0, 0, 0.2), 0 1 1 0 rgba(0, 0, 0, 0.14),
+    0 1 3 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 
@@ -266,7 +272,8 @@
 }
 
 .team--grid .grid_item {
-  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2), 1px 0 1px rgba(0, 0, 0, 0.14), 3px 0 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2), 1px 0 1px rgba(0, 0, 0, 0.14),
+    3px 0 1px rgba(0, 0, 0, 0.12);
 }
 
 .social-link {
@@ -280,7 +287,8 @@
   padding: 10px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link:hover, .social-link:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: rgb(33, 150, 243);
 }
 .social-link_icon {
@@ -378,7 +386,7 @@
   margin-bottom: 94px;
 }
 .product-grid.product-item {
-  flex: calc((100% - 60px) / 3);
+  flex-basis: 0 0 100%;
 }
 
 .box {
@@ -466,7 +474,9 @@
   text-align: center;
   margin-right: 8px;
 }
-.nav-button:hover, .nav-button:active, .nav-button:focus {
+.nav-button:hover,
+.nav-button:active,
+.nav-button:focus {
   cursor: pointer;
   background-color: rgb(33, 150, 243);
   border-color: rgb(33, 150, 243);
@@ -505,7 +515,8 @@
 .icon_grid_footer .social-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.icon_grid_footer .social-link:hover, .icon_grid_footer .social-link:active {
+.icon_grid_footer .social-link:hover,
+.icon_grid_footer .social-link:active {
   background-color: rgb(33, 150, 243);
 }
 .icon_grid_footer .social-link .social_icon {
@@ -529,7 +540,8 @@
   text-decoration: none;
   font-size: 14px;
 }
-.address-grid .address:hover, .address-grid .address:focus {
+.address-grid .address:hover,
+.address-grid .address:focus {
   color: rgb(33, 150, 243);
   text-decoration-line: underline 2px rgb(33, 150, 243);
   cursor: pointer;
@@ -541,11 +553,16 @@
   font-weight: 400px;
   line-height: 1.14;
   font-style: normal;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-grid .address-link:hover, .address-grid .address-link:focus {
+.address-grid .address-link:hover,
+.address-grid .address-link:focus {
   color: rgb(33, 150, 243);
   text-decoration-line: underline 2px rgb(33, 150, 243);
   cursor: pointer;
@@ -576,7 +593,8 @@
   justify-content: center;
   align-items: center;
 }
-.company-link:focus, .company-link:hover {
+.company-link:focus,
+.company-link:hover {
   border: 1px solid rgb(33, 150, 243);
 }
 
@@ -593,15 +611,15 @@
 
 * {
   -webkit-margin-before: 0;
-          margin-block-start: 0;
+  margin-block-start: 0;
   -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin-block-end: 0;
   -webkit-margin-start: 0;
-          margin-inline-start: 0;
+  margin-inline-start: 0;
   -webkit-margin-end: 0;
-          margin-inline-end: 0;
+  margin-inline-end: 0;
   -webkit-padding-start: 0;
-          padding-inline-start: 0;
+  padding-inline-start: 0;
 }
 
 body {
@@ -621,7 +639,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 4000ms cubic-bezier(0.4, 0, 0.2, 1), transform 4000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 4000ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 4000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal {
@@ -650,10 +669,12 @@ body {
   width: 528px;
   height: 581px;
   background-color: #ffffff;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14);
   position: relative;
 }
-.inner-modal:hover, .inner-modal:focus {
+.inner-modal:hover,
+.inner-modal:focus {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -677,7 +698,8 @@ body {
 .heading-section {
   max-width: 1600px;
   margin: 0, auto;
-  background-image: url("../images/background.jpg"), url("../images/Img Overlay.jpg"), url("../images/background.jpg");
+  background-image: url("../images/background.jpg"),
+    url("../images/Img Overlay.jpg"), url("../images/background.jpg");
 }
 
 .social_icon {
@@ -685,4 +707,4 @@ body {
 }
 .social_icon:hover {
   fill: #ffffff;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,10 @@
-@import "../utils/vars";
-@import "../components/body";
-@import "../components/customers";
-@import "../components/footer";
-@import "../components/header";
-@import "../components/portofolio";
+@import "../sass/components/body";
+@import "../sass/components/customers";
+@import "../sass/components/footer";
+@import "../sass/components/header";
+@import "../sass/components/mobile-menu";
+@import "../sass/components/portofolio";
+@import "../sass/utils/vars";
 
 * {
   margin-block-start: 0;
@@ -21,8 +22,8 @@ body {
 }
 .modal {
   position: fixed;
-  width: 480px;
-  height: 480px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 99;
   display: flex;
@@ -73,18 +74,34 @@ body {
   transform: scale(0);
 }
 .container {
-  max-width: 480px;
+  min-width: 480px;
+  max-width: 1170px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   gap: $gap;
 }
 .heading-section {
-  max-width: 480px;
+  min-width: 480px;
+  max-width: 1170px;
   margin: 0, auto;
-  background-image: url("../images/bagckgroundomg/Header img.jpg"),
-    url("../images/Img\ Overlay.jpg"), url("../images/background.jpg");
+  background-image: url("../images/backgroundimg/Header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+@media (min-width: 768px) {
+  .heading-section {
+    background-image: url("../images/backgroundimg/Header7.jpg");
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .heading-section {
+    background-image: url("../images/backgroundimg/header1.jpg");
+  }
+}
+
 .social_icon {
   fill: $paragraph-color;
   &:hover {

@@ -38,9 +38,11 @@
   fill: $white-color;
 }
 .page-section {
-  max-width: 450px;
+  min-width: 480px;
 }
 .container-flex {
+  min-width: 480px;
+  max-width: 1600px;
   display: flex;
   margin: 0, auto;
   justify-content: center;
@@ -74,6 +76,11 @@
     display: inline-block;
   }
 }
+@media (max-width: 767px) {
+  .nav-grid {
+    display: none;
+  }
+}
 .nav-link {
   color: $writing-color;
   font-style: normal;
@@ -94,6 +101,12 @@
     display: inline-block;
   }
 }
+@media (max-width: 767px) {
+  .contact-list {
+    display: none;
+  }
+}
+
 .link {
   text-decoration: none;
   color: $paragraph-color;
