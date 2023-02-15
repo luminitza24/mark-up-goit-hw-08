@@ -24,29 +24,6 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="container">
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-      </div>
-    </header>
     <div class="modal is-hidden" data-modal>
       <div class="inner-modal">
         <button type="button" class="close-modal" data-modal-close>x</button>
@@ -92,21 +69,40 @@
         </div>
       </div>
     </div>
-    <header class="page-section">
-      <div class="container">
+    <header class="page-header">
+      <div class="page-header__inner">
         <a class="logo" href="/"><span class="web_logo">Web</span>Studio</a>
         <nav>
           <ul class="nav-grid">
-            <li class="nav-grid_item">
+            <li class="nav_item">
               <a class="nav-link" href="/">Studio</a>
             </li>
-            <li class="nav-grid_item">
+            <li class="nav_item">
               <a class="nav-link" href="portofolio.html">Portofolio</a>
             </li>
-            <li class="nav-grid_item">
+            <li class="nav_item">
               <a class="nav-link" href="/">Contacts</a>
             </li>
           </ul>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </nav>
         <ul class="contact-list">
           <li class="contact-list_item">
@@ -523,6 +519,30 @@
         <li><a href="" class="link">Studio</a></li>
         <li><a href="" class="link">Portofolio</a></li>
         <li><a href="" class="link">Contacts</a></li>
+      </ul>
+      <ul class="mobile-menu contacts">
+        <li>
+          <a class="contact-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="contact-link" href="tel:+1212-772-4150"> +1 212-772-4150</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu social-links">
+        <li class="menu_item">
+          <a class="social-link_item" href="/">Instagram</a>
+        </li>
+        <li class="menu_item">
+          <a class="social-link_item" href="/">Twitter</a>
+        </li>
+        <li class="menu_item">
+          <a class="social-link_item" href="/">Facebook</a>
+        </li>
+        <li class="menu_item">
+          <a class="social-link_item" href="/">Linkedin</a>
+        </li>
       </ul>
     </div>
     <script defer src="js/mobile-menu.js"></script>

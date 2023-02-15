@@ -1,5 +1,6 @@
 @import "../utils/vars";
-@media screen and (min-width: 1200px) {
+
+@media (min-width: 1200px) {
   .page-section .what-we-do {
     display: none;
   }
@@ -13,10 +14,12 @@
   gap: 30px;
 }
 .grid--col-3 .grid_item {
+  flex-basis: 1 0 100%;
   position: relative;
   margin-bottom: 94px;
 }
 .grid--col-4 .grid_item {
+  flex-basis: 0 0 100%;
   margin-bottom: 94px;
   margin-top: 94px;
   display: inline-block;

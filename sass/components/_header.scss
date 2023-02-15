@@ -1,5 +1,4 @@
 @import "../utils/vars";
-
 .heading {
   font-weight: 900px;
   color: $white-color;
@@ -12,6 +11,16 @@
   &__button {
     margin-bottom: 200px;
   }
+}
+.page-header__inner {
+  min-width: 320px;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .button {
   width: 200px;
