@@ -1,7 +1,16 @@
 @import "../utils/vars";
 .footer {
+  width: 100vw;
+  max-width: 1600px;
+  min-width: 480px;
   background-color: $bg-color;
-  display: flex;
+}
+.footer-section {
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
 }
 .section-address {
   padding: 60px, 0;
@@ -10,7 +19,13 @@
   padding-top: 72px;
 }
 .subscribe {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   padding-top: 72px;
+  border: 1px solid white;
 }
 .social-title {
   color: $white-color;
@@ -19,8 +34,14 @@
   font-weight: 700px;
   font-size: 14px;
   line-height: 16.41px;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+.icon_grid_footer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 .icon_grid_footer .social-link {
@@ -32,6 +53,12 @@
   & .social_icon {
     fill: $white-color;
   }
+}
+.address--footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .address--footer .logo {
   color: $white-color;
@@ -71,6 +98,10 @@
   }
 }
 .e-mail-section {
+  max-width: 450px;
+  height: 50px;
+  flex-basis: 0 1 100%;
+  display: block;
   font-size: 16px;
   line-height: 1.25;
   color: $paragraph-color;

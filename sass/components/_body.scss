@@ -1,12 +1,13 @@
 @import "../utils/vars";
 
-@media (min-width: 1200px) {
-  .page-section .what-we-do {
+@media screen and (max-width: 1200px) {
+  .page-section.what-we-do {
     display: none;
   }
 }
 
 .grid {
+  max-width: 450px;
   flex-basis: 0 0 100%;
   list-style-type: none;
   display: flex;
@@ -14,21 +15,20 @@
   gap: 30px;
 }
 .grid--col-3 .grid_item {
+  max-width: 450px;
   flex-basis: 1 0 100%;
   position: relative;
-  margin-bottom: 94px;
 }
 .grid--col-4 .grid_item {
+  max-width: 450px;
   flex-basis: 0 0 100%;
-  margin-bottom: 94px;
-  margin-top: 94px;
   display: inline-block;
 }
 .team--grid .grid_item {
+  max-width: 450px;
   box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2), 1px 0 1px rgba(0, 0, 0, 0.14),
     3px 0 1px rgba(0, 0, 0, 0.12);
 }
-
 .social-link {
   background-color: $white-color;
   border-radius: 50%;
@@ -56,6 +56,7 @@
   padding-bottom: 50px;
 }
 .grid_item {
+  margin-bottom: 30px;
   display: inline-block;
 }
 
@@ -63,6 +64,7 @@
   width: 70px;
   height: 70px;
   margin-bottom: 30px;
+  margin-top: 30px;
   align-self: center;
 }
 .grid_title {
@@ -71,7 +73,7 @@
   font-weight: 400px;
   line-height: 1.17;
   margin-bottom: 16px;
-  text-align: left;
+  text-align: center;
 }
 .grid_parag {
   color: $paragraph-color;
