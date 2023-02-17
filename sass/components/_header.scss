@@ -140,18 +140,18 @@
   font-size: 20px;
   line-height: 1.17;
   margin-top: 40px;
-  margin-left: 41px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: 12px;
 }
 .contact-form {
-  width: 448px;
-  height: 342px;
+  width: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   & label {
-    flex: 1 0 100%;
+    width: 370px;
     font-size: 12px;
     font-weight: 400px;
     line-height: 1.17;
@@ -163,19 +163,20 @@
   & input {
     border-radius: 4px;
     background-color: $white-color;
-    width: 448px;
     height: 40px;
     border: 1px solid $paragraph-color;
     margin-top: 4px;
     padding-left: 40px;
   }
+
   & textarea {
-    width: 448px;
+    width: 370px;
     height: 120px;
     resize: none;
     margin-top: 4px;
   }
 }
+
 .form_icon {
   width: 18px;
   height: 18px;
