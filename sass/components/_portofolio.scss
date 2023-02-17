@@ -6,8 +6,12 @@
   list-style-type: none;
   gap: 30px;
   margin-bottom: 94px;
+  justify-content: center;
+  align-items: center;
   &.product-item {
-    flex-basis: 0 0 100%;
+    max-width: 450px;
+    display: block;
+    flex-basis: 1 0 100%;
   }
 }
 .box {
@@ -73,6 +77,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 .grid-buttons_item {
   padding: 6px, 25px;

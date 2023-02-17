@@ -6,11 +6,6 @@
   list-style: none;
   flex-direction: column;
 }
-@media screen and (min-width: 767) {
-  .menu-toggle {
-    display: none;
-  }
-}
 @media (min-width: 767px) {
   .menu-container {
     display: none;

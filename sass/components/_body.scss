@@ -59,13 +59,20 @@
   margin-bottom: 30px;
   display: inline-block;
 }
+.diagram-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(245, 244, 250, 1);
+}
 
 .grid_icon {
   width: 70px;
   height: 70px;
   margin-bottom: 30px;
   margin-top: 30px;
-  align-self: center;
+  text-align: center;
 }
 .grid_title {
   color: $writing-color;
