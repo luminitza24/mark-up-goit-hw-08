@@ -73,8 +73,8 @@
 .grid-buttons {
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-bottom: 50px;
   flex-wrap: wrap;
 }
@@ -107,6 +107,7 @@
     justify-content: flex-start;
   }
   .product-grid .product-item {
+    object-fit: contain;
     max-width: 354px;
     flex-basis: calc((100% - $gap) / 2);
   }

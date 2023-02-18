@@ -7,18 +7,30 @@
 .footer-section {
   width: 100%;
   padding-top: 60px;
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .subscribe {
+  gap: 20px;
+}
+.subscribe_item {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 20px;
-  padding-top: 60px;
 }
+
+@media screen and (min-width: 1200px) {
+  .subscribe_item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
 .social-title {
   color: $white-color;
   font-family: Roboto;
@@ -58,6 +70,7 @@
 }
 .address-grid_item {
   margin-bottom: 12px;
+  display: flex;
 }
 .address-grid {
   list-style-type: none;
@@ -93,8 +106,8 @@
 .e-mail-section {
   width: 450px;
   height: 50px;
-  flex-basis: 0 1 100%;
-  display: block;
+  display: flex;
+  flex-direction: row;
   font-size: 16px;
   line-height: 1.25;
   color: $paragraph-color;
@@ -125,5 +138,9 @@
   .subscribe {
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .social-title {
+    text-align: left;
   }
 }
