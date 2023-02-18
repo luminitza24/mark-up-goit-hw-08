@@ -56,9 +56,10 @@
 }
 @media screen and (min-width: 1200px) {
   .team-image {
-    max-width: 270px;
+    max-width: 100%;
   }
 }
+
 .section-heading {
   color: $writing-color;
   font-size: 36px;
@@ -73,6 +74,7 @@
 }
 .diagram-link {
   width: 100%;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,6 +104,7 @@
 }
 .icon_grid {
   margin: 0;
+  padding: 0;
   width: 100%;
   list-style-type: none;
   display: flex;
@@ -154,7 +157,8 @@
 }
 @media screen and (min-width: 1200px) {
   .grid--col-4 .grid_item {
-    max-width: 270px;
     flex-basis: calc((100% - (3 * $gap)) / 4);
+    flex-shrink: 1;
+    flex-wrap: nowrap;
   }
 }

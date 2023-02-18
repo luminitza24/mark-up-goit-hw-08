@@ -82,6 +82,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: $gap;
+  padding-top: 94px;
 }
 .heading-section {
   min-width: 480px;
@@ -108,7 +109,8 @@ body {
 
 .social_icon {
   fill: $paragraph-color;
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $white-color;
   }
 }
