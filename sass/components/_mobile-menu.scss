@@ -5,12 +5,6 @@
   margin: 0;
   list-style: none;
   flex-direction: column;
-  display: none;
-}
-@media screen and (min-width: 767px) {
-  .menu-toggle {
-    display: none;
-  }
 }
 
 .mobile-menu.contacts {
@@ -100,4 +94,9 @@
 .contact-link {
   color: $paragraph-color;
   text-decoration: none;
+}
+@media screen and (min-width: 767px) {
+  .menu-toggle {
+    display: none;
+  }
 }

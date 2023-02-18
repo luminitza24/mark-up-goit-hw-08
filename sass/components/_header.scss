@@ -1,5 +1,6 @@
 @import "../utils/vars";
 .heading {
+  max-width: 700px;
   font-weight: 900px;
   color: $white-color;
   font-size: 44px;
@@ -13,8 +14,9 @@
   }
 }
 .page-header__inner {
+  margin: 0 auto;
   min-width: 320px;
-  max-width: 1170px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   min-height: 80px;
@@ -81,6 +83,7 @@
   display: flex;
   gap: 50px;
   padding: 24px, 0, 0, 25px;
+  margin-left: auto;
   .nav-grid_item {
     display: inline-block;
   }
@@ -115,7 +118,20 @@
     display: none;
   }
 }
-
+@media screen and (min-width: 767px) {
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+  }
+}
 .link {
   text-decoration: none;
   color: $paragraph-color;
@@ -140,18 +156,18 @@
   font-size: 20px;
   line-height: 1.17;
   margin-top: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 41px;
   margin-bottom: 12px;
 }
 .contact-form {
-  width: 450px;
+  width: 370px;
+  height: 342px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   & label {
-    width: 370px;
+    text-align: left;
     font-size: 12px;
     font-weight: 400px;
     line-height: 1.17;
@@ -163,12 +179,12 @@
   & input {
     border-radius: 4px;
     background-color: $white-color;
+    width: 370px;
     height: 40px;
     border: 1px solid $paragraph-color;
     margin-top: 4px;
     padding-left: 40px;
   }
-
   & textarea {
     width: 370px;
     height: 120px;
@@ -176,7 +192,28 @@
     margin-top: 4px;
   }
 }
-
+.form_icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 30px;
+  left: 13.5px;
+  color: $writing-color;
+  &:hover {
+    fill: $brand-color;
+  }
+}
+.form_icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 30px;
+  left: 13.5px;
+  color: $writing-color;
+  &:hover {
+    fill: $brand-color;
+  }
+}
 .form_icon {
   width: 18px;
   height: 18px;
@@ -244,7 +281,4 @@
   color: $brand-color;
   font-size: 14px;
   line-height: 1.71;
-}
-.form-container .button {
-  margin-left: 164px;
 }

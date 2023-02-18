@@ -24,3 +24,14 @@
   align-items: center;
   margin-bottom: 94px;
 }
+
+@media screen and (min-width: 767px) {
+  .grid--col-6 .grid_item {
+    flex-basis: calc((100% - (2 * $gap)) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid--col-6 .grid_item {
+    flex-basis: calc((100% - (5 * $gap)) / 6);
+  }
+}
